@@ -29,7 +29,7 @@ Performance ⚡: Optimized with lazy-loaded images and minimal external dependen
 
 # 🔗 Demo
 
-You can view a live demo of the website here - 
+You can view a live demo of the website here - https://wave-premiumheadphone.vercel.app/
 
 # 🛠️ Technologies Used
 
