@@ -1,0 +1,124 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  background: #1a1a1a;
+}
+
+/* Glassmorphism Effect */
+.bg-glass {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+/* Glowing Shadow */
+.drop-shadow-glow {
+  filter: drop-shadow(0 0 8px rgba(212, 175, 55, 0.3));
+}
+
+/* Gradient Underline for Headings */
+.gradient-underline {
+  position: absolute;
+  bottom: -3px;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(to right, transparent, #d4af37, transparent);
+  display: block;
+}
+
+/* Buy Now Button Gradient */
+.buy-now:hover {
+  background: linear-gradient(to right, #d4af37, #b8972f);
+}
+
+/* Viewer Styling */
+#viewer {
+  position: relative;
+  user-select: none;
+  border: 1px solid rgba(212, 175, 55, 0.2);
+  box-shadow: 0 0 15px rgba(212, 175, 55, 0.1);
+}
+
+#viewer img {
+  display: none;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border-radius: 15px;
+  transition: opacity 0.3s ease;
+}
+
+#viewer img.active {
+  display: block;
+}
+
+/* Carousel Styling */
+.carousel {
+  display: flex;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  justify-content: center;
+}
+
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+
+/* Feature Images */
+.feature img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Headphone Images in Carousel */
+.headphone-img {
+  object-fit: contain;
+  background: #2a2a2a; /* Slight background color to fill empty space */
+}
+
+/* Buttons */
+button {
+  transition: all 0.3s ease;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .feature {
+    flex-direction: column !important;
+  }
+  .feature > div {
+    width: 100% !important;
+    padding: 0 !important;
+    margin-bottom: 1rem;
+  }
+  .feature > div:first-child {
+    padding: 1rem !important; /* Add padding to text div for readability */
+  }
+  #viewer img {
+    max-width: 100% !important; /* Fit within screen width */
+  }
+  h1 {
+    font-size: 2rem !important; /* Reduced from 2.5rem */
+  }
+  h2 {
+    font-size: 1.5rem !important; /* Reduced from 1.75rem */
+  }
+  .text-2xl {
+    font-size: 1.25rem !important; /* Price text reduced to 20px */
+  }
+  .carousel .flex-none {
+    width: 70% !important;
+    margin: 0 0.5rem !important; /* Tighter margins */
+  }
+  .headphone-img {
+    height: 8rem !important; /* h-32 for mobile */
+  }
+  .carousel img:not(.headphone-img) {
+    height: 8rem !important; /* Match headphone images */
+  }
+}

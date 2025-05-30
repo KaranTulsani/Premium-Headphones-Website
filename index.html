@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>X1000 Pro Headphones</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-black text-white font-poppins">
+  <!-- Navbar -->
+  <nav class="bg-glass p-4 fixed w-full top-0 z-10">
+    <div class="container mx-auto flex justify-between items-center">
+      <div class="text-3xl font-bold text-gold drop-shadow-glow md:text-2xl">Wave</div>
+      <div class="space-x-6 md:space-x-4">
+        <a href="#" class="text-gray-300 hover:text-gold transition hover:drop-shadow-glow text-base md:text-sm">Home</a>
+        <a href="#" class="text-gray-300 hover:text-gold transition hover:drop-shadow-glow text-base md:text-sm">Products</a>
+        <a href="#" class="text-gray-300 hover:text-gold transition hover:drop-shadow-glow text-base md:text-sm">Cart</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="pt-24 pb-12 text-center min-h-screen flex items-center justify-center">
+    <div class="container mx-auto">
+      <div id="viewer" class="mb-8 relative p-6 bg-glass rounded-xl">
+        <img src="images/HeadphoneMain.png" class="active" alt="Headphone">
+      </div>
+      <h1 class="text-5xl md:text-6xl font-bold mb-4 relative">
+        X1000 Pro Headphones
+        <span class="gradient-underline"></span>
+      </h1>
+      <p class="text-2xl md:text-3xl mb-6 text-gray-400 drop-shadow-md">$499</p>
+      <div class="space-x-4 md:space-x-2">
+        <button class="bg-glass text-gold border border-gold px-8 md:px-6 py-3 rounded-full hover:bg-gold hover:text-black transition transform hover:scale-105 hover:drop-shadow-glow">Add to Cart</button>
+        <button class="buy-now text-gold border-2 border-gold px-8 md:px-6 py-3 rounded-full hover:bg-gold-gradient hover:text-black transition transform hover:scale-105 hover:drop-shadow-glow">Buy Now</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Details Section -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <div class="feature flex items-center mb-16 opacity-0" data-feature>
+        <div class="w-1/2 pr-8">
+          <h2 class="text-3xl font-bold mb-4 relative text-gold">
+            Immersive Sound
+            <span class="gradient-underline"></span>
+          </h2>
+          <p class="text-gray-400">Experience studio-quality audio with advanced noise cancellation and 7.1 surround sound, perfect for music, gaming, and movies.</p>
+        </div>
+        <div class="w-1/2">
+          <img src="images/headphone1.jpg" class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" alt="Immersive Sound">
+        </div>
+      </div>
+      <div class="feature flex items-center flex-row-reverse mb-16 opacity-0" data-feature>
+        <div class="w-1/2 pl-8">
+          <h2 class="text-3xl font-bold mb-4 relative text-gold">
+            20hr Battery Life
+            <span class="gradient-underline"></span>
+          </h2>
+          <p class="text-gray-400">Enjoy up to 20 hours of uninterrupted playback with fast USB-C charging, keeping you powered all day.</p>
+        </div>
+        <div class="w-1/2">
+          <img src="images/headphone2.jpg" class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" alt="Battery Life">
+        </div>
+      </div>
+      <div class="feature flex items-center mb-16 opacity-0" data-feature>
+        <div class="w-1/2 pr-8">
+          <h2 class="text-3xl font-bold mb-4 relative text-gold">
+            Premium Build Quality
+            <span class="gradient-underline"></span>
+          </h2>
+          <p class="text-gray-400">Crafted with aerospace-grade aluminum and memory foam earpads for unmatched durability and comfort.</p>
+        </div>
+        <div class="w-1/2">
+          <img src="images/headphone3.jpg" class="w-full rounded-lg shadow-lg hover:shadow-xl transition-shadow" alt="Build Quality">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Why Buy Section -->
+  <section class="py-16 bg-glass">
+    <div class="container mx-auto text-center">
+      <h2 class="text-4xl font-bold mb-12 opacity-0 relative text-gold" data-feature>
+        Why Buy X1000 Pro?
+        <span class="gradient-underline"></span>
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="feature bg-glass p-6 rounded-lg opacity-0 hover:drop-shadow-glow transition" data-feature>
+          <h3 class="text-xl font-semibold mb-2 text-gold md:text-lg">Unrivaled Audio</h3>
+          <p class="text-gray-400">Delivers crisp highs and deep bass for an immersive listening experience.</p>
+        </div>
+        <div class="feature bg-glass p-6 rounded-lg opacity-0 hover:drop-shadow-glow transition" data-feature>
+          <h3 class="text-xl font-semibold mb-2 text-gold md:text-lg">All-Day Comfort</h3>
+          <p class="text-gray-400">Lightweight design with plush earpads for hours of fatigue-free use.</p>
+        </div>
+        <div class="feature bg-glass p-6 rounded-lg opacity-0 hover:drop-shadow-glow transition" data-feature>
+          <h3 class="text-xl font-semibold mb-2 text-gold md:text-lg">Seamless Connectivity</h3>
+          <p class="text-gray-400">Bluetooth 5.0 ensures stable, high-quality wireless performance.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Customer Reviews -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8 opacity-0 relative text-gold" data-feature>
+        Customer Reviews
+        <span class="gradient-underline"></span>
+      </h2>
+      <button id="toggleReviews" class="block mx-auto bg-glass text-gold border border-gold px-8 md:px-6 py-3 rounded-full mb-4 hover:bg-gold hover:text-black transition transform hover:scale-105 hover:drop-shadow-glow">Show Reviews</button>
+      <div id="reviews" class="hidden">
+        <div class="review bg-glass p-6 md:p-4 rounded-lg mb-4 hover:drop-shadow-glow transition">
+          <p class="font-bold text-gold">★★★★★ Great product!</p>
+          <p class="text-gray-400">The sound quality is phenomenal, and they’re so comfortable for long sessions.</p>
+        </div>
+        <div class="review bg-glass p-6 md:p-4 rounded-lg mb-4 hover:drop-shadow-glow transition">
+          <p class="font-bold text-gold">★★★★☆ Loved the sound!</p>
+          <p class="text-gray-400">Incredible audio, though I wish the battery lasted a bit longer.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Related Products Carousel -->
+  <section class="py-16">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold text-center mb-8 opacity-0 relative text-gold" data-feature>
+        Related Products
+        <span class="gradient-underline"></span>
+      </h2>
+      <div class="carousel">
+        <div class="flex-none w-80 bg-glass p-6 m-4 md:m-2 rounded-lg hover:drop-shadow-glow transition">
+          <img src="images/product1-headphone.png" class="headphone-img w-full h-40 mb-4 rounded" alt="Product 1">
+          <p class="font-bold text-gold">X1000 Pro Headphones</p>
+          <p class="text-gray-400">$499</p>
+        </div>
+        <div class="flex-none w-80 bg-glass p-6 m-4 md:m-2 rounded-lg hover:drop-shadow-glow transition">
+          <img src="images/product2-headphone.png" class="headphone-img w-full h-40 mb-4 rounded" alt="Product 2">
+          <p class="font-bold text-gold">X800 Headphones</p>
+          <p class="text-gray-400">$399</p>
+        </div>
+        <div class="flex-none w-80 bg-glass p-6 m-4 md:m-2 rounded-lg hover:drop-shadow-glow transition">
+          <img src="images/product3-earbuds.png" class="w-full h-40 object-cover mb-4 rounded" alt="Product 3">
+          <p class="font-bold text-gold">X600 Earbuds</p>
+          <p class="text-gray-400">$199</p>
+        </div>
+        <div class="flex-none w-80 bg-glass p-6 m-4 md:m-2 rounded-lg hover:drop-shadow-glow transition">
+          <img src="images/product4-speakers.png" class="w-full h-40 object-cover mb-4 rounded" alt="Product 4">
+          <p class="font-bold text-gold">X900 Speakers</p>
+          <p class="text-gray-400">$299</p>
+        </div>
+      </div>
+      <div class="flex justify-center space-x-4 mt-4">
+        <button id="prev" class="bg-glass text-gold border border-gold px-4 py-2 rounded-full hover:bg-gold hover:text-black transition transform hover:scale-105 hover:drop-shadow-glow">←</button>
+        <button id="next" class="bg-glass text-gold border border-gold px-4 py-2 rounded-full hover:bg-gold hover:text-black transition transform hover:scale-105 hover:drop-shadow-glow">→</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-glass text-gray-400 py-8">
+    <div class="container mx-auto text-center">
+      <div class="space-x-6 md:space-x-4">
+        <a href="#" class="hover:text-gold transition hover:drop-shadow-glow">About</a>
+        <a href="#" class="hover:text-gold transition hover:drop-shadow-glow">Contact</a>
+        <a href="#" class="hover:text-gold transition hover:drop-shadow-glow">Terms</a>
+      </div>
+      <p class="mt-4 text-sm">© 2025 AudioVibe. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
